@@ -1,24 +1,21 @@
-#mainWindow {
+view {
     background-color: #e15900;
 }
 
-.regform-cell {
-    background-color: white
-}
-
-.regform-cell-button label {
+.input {
+    left: 15;
+    width: 290;
+    height: 40;
     background-color: white;
+    font-align: right;
 }
 
-.regform-header {
-    background-color: #2d1f14;
+#first_name.input {
+    top: 50;
 }
 
-.regform-header label {
-    font-family: 'cubano';
-    font-size: 24px;
-    color: white;
-    width: 300;
+#last_name.input {
+    top: 110;
 }
 
 button {
@@ -30,8 +27,9 @@ button {
 }
 
 button.next {
-    left: 220;
+    text: 'next >';
+    left: 210;
     top: 200;
-    width: 100;
+    width: 120;
     height: 60;
 }

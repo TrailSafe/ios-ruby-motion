@@ -143,4 +143,19 @@
  */
 + (void)updateStylesNonRecursively:(id<PXStyleable>)styleable;
 
+/**
+ *  Update styles for this styleable and all of its descendant styleables asynchronously
+ *
+ *  @param styleable The styleable to update
+ */
++ (void)updateStylesAsync:(id<PXStyleable>)styleable;
+
+/**
+ *  Update styles for this styleable only asynchronously
+ *
+ *  @param styleable The styleable to update
+ */
++ (void)updateStylesNonRecursivelyAsync:(id<PXStyleable>)styleable;
+
+
 @end

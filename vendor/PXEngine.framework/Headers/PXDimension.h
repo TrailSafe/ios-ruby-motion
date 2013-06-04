@@ -114,4 +114,10 @@ typedef enum
  */
 - (PXDimension *)degrees;
 
+/**
+ *  Return a new PXDimesion, converting this instance's value to radians. If this instance is not an angle, then a zero
+ *  value will be returned.
+ */
+- (PXDimension *)radians;
+
 @end

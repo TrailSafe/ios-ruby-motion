@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <PXEngine/PXShape.h>
 #import <PXEngine/PXBoundable.h>
-#import <PXEngine/PXCornerRadius.h>
 
 /**
  *  A PXShape sub-class used to render rectangles
@@ -42,9 +41,24 @@
 @property (nonatomic) CGFloat height;
 
 /**
- *  The x-radius of the rounded corners of this rectangle
+ *  The radii of the top-left corner of this rectangle
  */
-@property (nonatomic) PXCornerRadius *cornerRadius;
+@property (nonatomic) CGSize radiusTopLeft;
+
+/**
+ *  The radii of the top-right corner of this rectangle
+ */
+@property (nonatomic) CGSize radiusTopRight;
+
+/**
+ *  The radii of the bottom-right corner of this rectangle
+ */
+@property (nonatomic) CGSize radiusBottomRight;
+
+/**
+ *  The radii of the bottom-left corner of this rectangle
+ */
+@property (nonatomic) CGSize radiusBottomLeft;
 
 /**
  *  Initializes a newly allocated rectangle using the specified bounds
@@ -54,19 +68,22 @@
 - (id)initWithRect:(CGRect)bounds;
 
 /**
- *  Initializes a newly allocated rectangle using the specified bounds and rounds the corners with the specified radius
- *
- *  @param bounds The bounds point of the rectangle
- *  @param radius The radius of the rounded corners of the rectangle
- *
-- (id)initWithRect:(CGRect)bounds radius:(CGFloat)radius;
+ *  Determine if any of the corners of this rectangle rounded
+ */
+- (BOOL)hasRoundedCorners;
 
-**
- *  Initializes a newly allocated rectangle using the specified bounds and rounds the corners with the specified radii
+/**
+ *  Set the corner radius of all corners to the specified value
  *
- *  @param bounds The bounds point of the rectangle
- *  @param radii The x- and y-radii of the rounded corners of the rectangle
+ *  @param radius A corner radius
+ */
+- (void)setCornerRadius:(CGFloat)radius;
+
+/**
+ *  Set the corner radius of all corners to the specified value
  *
-- (id)initWithRect:(CGRect)bounds radii:(CGSize)radii;
-*/
+ *  @param radii The x and y radii
+ */
+- (void)setCornerRadii:(CGSize)radii;
+
 @end

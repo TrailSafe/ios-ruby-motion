@@ -189,7 +189,7 @@ module MotionBundler
     "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api/rest_adapter.rb",
     "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api/singular_resource.rb",
     "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/formotion-overides.rb",
+    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/screen_elements.rb",
     "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/models/user.rb",
     "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/pixate_code.rb",
     "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/screens/activity_create_screen.rb",

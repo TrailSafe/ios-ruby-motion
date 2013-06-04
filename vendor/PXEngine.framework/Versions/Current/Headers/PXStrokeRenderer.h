@@ -15,6 +15,11 @@
 @protocol PXStrokeRenderer <NSObject>
 
 /**
+ *  Determine if this strokes requires rendering with alpha
+ */
+@property (readonly, nonatomic, getter=isOpaque) BOOL opaque;
+
+/**
  *  This method takes in a contour defined by a CGPath and applies whatever stroke effect it implements within the
  *  specified context
  *

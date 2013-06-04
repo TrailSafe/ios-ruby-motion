@@ -86,4 +86,19 @@
  */
 - (BOOL)getHue:(CGFloat *)hue saturation:(CGFloat *)saturation lightness:(CGFloat *)lightness alpha:(CGFloat *)alpha;
 
+/**
+ *  Determine if this color is opaque. Essentially, this returns true if the alpha channel is 1.0
+ */
+- (BOOL)isOpaque;
+
+/**
+ *  Adds percent to the lightness channel of this color
+ */
+- (UIColor *)darkenByPercent:(CGFloat)percent;
+
+/**
+ *  Subtracts percent from the lightness channel of this color
+ */
+- (UIColor *)lightenByPercent:(CGFloat)percent;
+
 @end

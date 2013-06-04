@@ -68,4 +68,16 @@
  */
 - (void)quadraticBezierToX1:(CGFloat)x1 y1:(CGFloat)y1 x2:(CGFloat)x2 y2:(CGFloat)y2;
 
+/**
+ *  Add an arc of an ellipse to the current path
+ *
+ *  @param x The x-coordinate of the center of the ellipse
+ *  @param y The y-coordinate of the center of the ellipse
+ *  @param radiusX The x-radius of the ellipse
+ *  @param radiusY The y-radius of the ellipse
+ *  @param startAngle The starting angle of the arc
+ *  @param endAngle The ending angle of the arc
+ */
+- (void)ellipticalArcX:(CGFloat)x y:(CGFloat)y radiusX:(CGFloat)radiusX radiusY:(CGFloat)radiusY startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle;
+
 @end
