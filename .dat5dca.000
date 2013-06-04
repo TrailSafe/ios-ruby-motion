@@ -1,0 +1,76 @@
+User.fetch { |r| puts r.json }
+User.fetch! { |r| puts r.json }
+User.fetch! { |r| puts r.options }
+{ foo: 'bar', baz: 123, raw: 345 }
+{ foo: 'bar', baz: 123, raw: 345 }.slice :foo
+h = { foo: 'bar', baz: 123, raw: 345 }
+sh = h.slice! :foo, :raw
+sh
+h = { foo: 'bar', baz: 123, raw: 345 }
+sh = h.except! :foo, :raw
+sh
+exit
+User.fetch! { |r| puts r.options }
+exit
+User.fetch! { |r| puts r.options }
+User.fetch! { |r| puts r.options }
+exit
+User.fetch! { |r| puts r.options }
+exit
+User.fetch! { |r| puts r.options }
+exit
+User.fetch! 401 { |r| puts r.options }
+exit
+User.fetch! 401 { |r| puts r.options }
+exit
+User.fetch! 401 { |r| puts r.options }
+Object.include
+exit
+User.fetch! 401 { |r| puts r.options }
+User.fetch! 401 { |r| puts r.options }
+exit
+User.fetch! 401 { |r| puts r.options }
+User.request_options
+exit
+User.fetch! 401 { |r| puts r.options }
+exit
+User.fetch! 401 { |r| puts r.options }
+User.fetch! 401 { |r| puts user }
+User.fetch! 401 { |r| puts user }
+User.fetch! 401 { |r| puts user.inspect }
+User.fetch { |r| puts user.inspect }
+User.fetch { |r| puts user.inspect }
+User.fetch { |r| puts user.inspect }
+exit
+User.fetch { |r| puts user.inspect }
+User.fetch { |r| @user = r }
+@user
+exit
+exit
+self
+check_for_user
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+wtf
+exit
+exit
+User.fetch { |u| puts u.present? }
+User.fetch { |u| puts u.present? }
+User.fetch { |u| puts u.present?.inspect }
+User.fetch { |u| puts u.present?  }
+User.fetch { |u| puts u || 'no'  }
+User.fetch! { |u| puts u || 'no'  }
+User.fetch! { |u| puts u  }
+User.fetch! { |u| puts u  }
+exit
+exit
+exit
+exit
+exit
+exit
