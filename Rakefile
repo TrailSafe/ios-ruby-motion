@@ -11,7 +11,7 @@ Motion::Project::App.setup do |app|
   app.interface_orientations = [:portrait, :portrait_upside_down]
   # app.detect_dependencies = false
   app.pixate.user = 'jason@waldrip.net'
-  app.pixate.key  = 'G6OEU-68BUE-C8NKI-E3GHO-SV7NO-C2QN0-RSKET-6B9C5-707JS-451BA-IE4OP-HG0C6-SHC0S-P68JG-I3LF7-J6'
+  app.pixate.key  = 'J144G-PVVDP-LRTHO-P7JQQ-TTJJC-34J9F-RPF3C-IS0GG-L0JE0-HDBFQ-4DBNN-M5KOI-E5S40-RFOIR-VG51L-2O'
   app.pixate.framework = 'vendor/PXEngine.framework'
   app.fonts = ['cubano.ttf']
 end

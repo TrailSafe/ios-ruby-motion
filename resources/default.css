@@ -1,35 +1,57 @@
-view {
+#mainWindow {
     background-color: #e15900;
 }
 
-.input {
+#title {
+    top: 15;
     left: 15;
     width: 290;
     height: 40;
-    background-color: white;
-    font-align: right;
-}
-
-#first_name.input {
-    top: 50;
-}
-
-#last_name.input {
-    top: 110;
-}
-
-button {
-    background-color: #2d1f14;
+    font-size: 18;
     font-family: 'cubano';
-    font-size: 24px;
-    height: 56px;
     color: white;
 }
 
+#sub-title {
+    top: 35;
+    left: 15;
+    width: 290;
+    height: 40;
+    font-size: 24;
+    font-family: 'cubano';
+    color: #2d1f14;
+}
+
+#mainWindow text-field {
+    left: 15;
+    width: 290;
+    height: 40;
+    font-align: right;
+    background-color: white;
+    border-radius: 5;
+    font-family: 'cubano';
+}
+
+text-field#phone_number {
+    top: 80;
+}
+
+text-field#first_name {
+    top: 140;
+}
+
+text-field#last_name {
+    top: 200;
+}
+
 button.next {
+    background-color: #2d1f14;
+    font-size: 24px;
+    color: white;
+    font-family: 'cubano';
     text: 'next >';
     left: 210;
-    top: 200;
+    top: 260;
     width: 120;
     height: 60;
 }

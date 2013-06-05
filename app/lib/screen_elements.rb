@@ -5,6 +5,10 @@ module ScreenElements
     style_element_from_options(UIButton.buttonWithType(type), options)
   end
 
+  def label(options={})
+    style_element_from_options(UILabel.new, options)
+  end
+
   def text_field(options={})
     style_element_from_options(UITextField.alloc.init, options)
   end

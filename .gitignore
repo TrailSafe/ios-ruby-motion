@@ -1,0 +1,14 @@
+story
+build
+tags
+.DS_Store
+*.swp
+*.swo
+resources/*.nib
+resources/*.momd
+resources/*.storyboardc
+.DS_Store
+*.o
+*.a
+.dat*
+*.xcodeprojexport DYLD_LIBRARY_PATH="/Applications/Postgres.app/Contents/MacOS/libq"

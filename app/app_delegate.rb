@@ -1,5 +1,5 @@
 class AppDelegate < PM::Delegate
-  include Config
+  include AppConfig
 
   def on_load(app, options)
     Api.root_url = "#{api_root_url}/devices/#{device_id}/"
@@ -9,7 +9,6 @@ class AppDelegate < PM::Delegate
 
   def check_for_user
     @user = User.fetch do |user|
-      puts user.inspect
       if user.present?
         check_for_help_request
       else
