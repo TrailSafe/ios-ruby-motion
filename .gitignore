@@ -8,6 +8,7 @@ resources/*.nib
 resources/*.momd
 resources/*.storyboardc
 .DS_Store
+.repl_history
 *.o
 *.a
 .dat*
