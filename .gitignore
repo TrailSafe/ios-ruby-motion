@@ -14,3 +14,4 @@ resources/*.storyboardc
 .dat*
 *.xcodeprojexport DYLD_LIBRARY_PATH="/Applications/Postgres.app/Contents/MacOS/libq"
 .motion-bundler.rb
+.idea
