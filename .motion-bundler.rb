@@ -1,8 +1,9 @@
 module MotionBundler
   FILES = [
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/.motion-bundler.rb",
-    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/device/boot.rb",
-    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/device/core_ext.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/.motion-bundler.rb",
+    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/boot.rb",
+    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/core_ext.rb",
+    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/console.rb",
     "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/bubble-wrap-1.3.0/motion/shortcut.rb",
     "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/bubble-wrap-1.3.0/motion/core.rb",
     "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/bubble-wrap-1.3.0/motion/core/app.rb",
@@ -183,29 +184,31 @@ module MotionBundler
     "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/formotion-1.3.1/lib/formotion/row_type/text_row.rb",
     "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/formotion-1.3.1/lib/formotion/section/section.rb",
     "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/formotion-1.3.1/lib/formotion/version.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/app_config.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/app_delegate.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api/response.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api/rest_adapter.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api/singular_resource.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/api.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/lib/screen_elements.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/models/user.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/pixate_code.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/screens/activity_create_screen.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/screens/activity_show_screen.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/screens/help_request_create_screen.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/screens/home_screen.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/app/screens/register_user_screen.rb"
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/app_config.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/app_delegate.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/lib/api/response.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/lib/api/rest_adapter.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/lib/api/singular_resource.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/lib/api.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/lib/screen_elements.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/models/user.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/pixate_code.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/screens/activity_create_screen.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/screens/activity_show_screen.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/screens/help_request_create_screen.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/screens/home_screen.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/app/screens/register_user_screen.rb"
   ]
   FILES_DEPENDENCIES = {
-    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/device/boot.rb" => [
-      "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/device/core_ext.rb"
+    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/boot.rb" => [
+      "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/core_ext.rb",
+      "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/console.rb"
     ]
   }
   REQUIRED = [
-    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/device/boot.rb",
-    "/Users/jwaldrip/Development/TrailSafe/ios-motion/.motion-bundler.rb",
+    "/Users/jwaldrip/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/motion-bundler-0.1.5/lib/motion-bundler/simulator/boot.rb",
+    "/Users/jwaldrip/Development/Organizations/TrailSafe/RubyMotion/iOS/ios-motion/.motion-bundler.rb",
+    "console",
     "core_ext"
   ]
 end
