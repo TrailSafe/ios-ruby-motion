@@ -4,35 +4,47 @@ class AppDelegate < PM::Delegate
   def on_load(app, options)
     Api.root_url = "#{api_root_url}/devices/#{device_id}/"
     Api.key = api_key
-    check_for_user
+    check_application_status
   end
 
-  def check_for_user
+  private
+
+  def check_application_status
+    check_for_user {
+      check_for_help_request {
+        check_for_activity {
+          open HomeScreen.new
+        }
+      }
+    }
+  end
+
+  def check_for_user(&block)
     @user = User.fetch do |user|
       if user.present?
-        check_for_help_request
+        yield
       else
         open RegisterUserScreen.new
       end
     end
   end
 
-  def check_for_help_request
+  def check_for_help_request(&block)
     HelpRequest.fetch do |help_request|
       if help_request.present?
         open HelpRequestShowScreen.new
       else
-        check_for_activity
+        yield
       end
     end
   end
 
-  def check_for_activity
+  def check_for_activity(&block)
     Activity.fetch do |activity|
       if activity.present?
         open ActivityShowScreen.new
       else
-        open HomeScreen.new
+        yield
       end
     end
   end
