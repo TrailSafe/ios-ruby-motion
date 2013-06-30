@@ -23,6 +23,8 @@
 }
 
 #mainWindow text-field {
+    padding-left: 10px;
+    padding-top: 10px;
     left: 15;
     width: 290;
     height: 40;

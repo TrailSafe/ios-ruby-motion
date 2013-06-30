@@ -9,8 +9,6 @@ gem 'motion-pixate'
 gem 'motion-support'
 gem 'formotion'
 
-source "http://rubygems.org"
-
 # RubyMotion unaware gems
 group :motion do
 end
